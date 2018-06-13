@@ -27,9 +27,9 @@ After training, there will checkpoints saved by pytorch, for example `*_checkpoi
 Use the following command to test its performance in the standard TSN testing protocol:
 
 ```bash
-nohup python test_models.py activitynet1.2 data/activitynet1.2_tag_flow_val_proposal_list.txt ${model} --save_path ${save_dir1} > flow_test.log 2>&1 &
+nohup python test_models.py ${dataset} data/${dataset}_tag_flow_val_proposal_list.txt ${model} --save_path ${flow_path}
 
-nohup python test_models.py activitynet1.2 data/activitynet1.2_tag_rgb_val_proposal_list.txt ${model} --save_path ${save_dir2} > rgb_test.log 2>&1 &
+python test_models.py ${dataset} data/${dataset}_tag_rgb_val_proposal_list.txt ${model} --save_path ${rgb_path}
 
 ```
 
