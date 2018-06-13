@@ -112,8 +112,8 @@ def generate_prop_list(gt_file, prop_file, out_list_name):
     open(out_list_name, 'w').writelines(processed_proposal_list)
     print('successfully generate files')
 
-gt_file = 'data/gt/activitynet1.2_flow_val_gt_list.txt'
-prop_file = '1_0.5_step64_garma18-1_tao18-1_iou08_fusion.txt'
-out_name = 'my_prop_flow_val.txt'
+gt_file = sys.argv[1]#'data/gt/activitynet1.2_flow_val_gt_list.txt'
+prop_file = sys.argv[2]#'1_0.5_step64_garma18-1_tao18-1_iou08_fusion.txt'
+out_name = sys.argv[3]#'my_prop_flow_val.txt'
 
 generate_prop_list(gt_file, prop_file, out_name)
