@@ -6,7 +6,7 @@ For optical flow extraction and video list generation, you still need to use the
 
 ## Training
 
-To train a new model, use the `sgd_main_random.py` script.
+To train a new model, use the `sgd_main.py` script.
 
 The command to train the binary classifier can be 
 
